@@ -1,0 +1,12 @@
+export:
+  build: .
+  links:
+    - db
+  volumes:
+    - .:/app
+  command: ridgepole -c config.yml -e
+
+db:
+  extends:
+    file: postgresql.yml
+    service: db

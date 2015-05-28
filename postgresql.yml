@@ -1,0 +1,7 @@
+db:
+  image: postgres:9.4.1
+  environment:
+    POSTGRES_USER: takasing
+    POSTGRES_PASSWORD: bgMtzjha
+  ports:
+    - "5433:5432"
